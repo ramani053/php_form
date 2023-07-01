@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        background-image: url('Untitled design (28).png');
+        background-size: 1450px;
+       opacity:0.7;
+    }
+    .box{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background-color: rgb(37, 37, 37);
+        width: 450px;
+        border-radius: 15px;
+        min-height: 50vh;
+        margin: 40px;
+       margin-left: 355px ;
+       padding-top: 10px;
+       padding-bottom: 20px;
+        
+    }
+    .box input{
+        margin-top: 10px;
+        margin-bottom: 10px;
+        padding: 7px;
+        width: 250px;
+    }
+    .box label{
+        font-size: 21px;
+        color: white;
+    }
+    h1{
+        color: white;
+    }
+</style>
+<body>
+    
+    <div class="box">
+        <h1> Doctor Appointment Form </h1>
+       <form action="connect.php" method="post">
+        
+        <label for="fname">Name:</label><br>
+        <input type="text"  name="Name" required > <br>
+    
+      <label for="age">Age:</label><br>
+      <input type="text"  name="Age" ><br>
+   
+  <label for="weight">Weight:</label><br>
+  <input type="text"  name="Weight" ><br>
+
+  <label for="email">Email id:</label><br>
+  <input type="email" name="Email " required ><br>
+
+    <label for="myfile"> Upload Health Report:</label><br>
+    <input type="file"  name="Report" required><br>
+
+  <input class="button" type="submit" value="Submit">
+</form>
+</div>
+    
+</body>
+</html>
